@@ -45,7 +45,6 @@ const DetailsPage = () => {
         getRecommendations()
     }, [id])
 
-
     return (
         <section>
             {movie && castCrew && <DetailsCard movie={movie} castCrew={castCrew} />}

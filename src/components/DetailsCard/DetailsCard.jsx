@@ -1,12 +1,12 @@
 import React from "react"
 import { BASE_URL_POSTERS } from "../../constants/constants"
-import { Img, Title, ContaineAverage, StyleText, MainContainer, ContainerDetails, StyleOverview, StyleCrew, ContainerCrew } from "./styleDetailsCard"
+import { Img, Title, ContaineAverage, StyleText, MainContainer, ContainerDetails, StyleOverview, StyleCrew, ContainerCrew, ContainerGenres } from "./styleDetailsCard"
 import 'react-circular-progressbar/dist/styles.css'
 import renderCicle from "./CircularProgress"
 
 const DetailsCard = (props) => {
 
-    const {castCrew} = props
+    const { castCrew } = props
 
     const { poster_path, title, release_date, genres, runtime, vote_average, overview } = props.movie
 
@@ -33,15 +33,18 @@ const DetailsCard = (props) => {
             <Img src={BASE_URL_POSTERS + poster_path} alt="" />
             <ContainerDetails>
                 <Title>{title}</Title>
-                <p> &nbsp; • {release_date}</p>
-                {
-                    genres.map((genre) => {
-                        return (
-                            <p key={genre.name}> &nbsp; • {genre.name}</p>
-                        )
-                    })
-                }
-                <p> &nbsp; • {runTime(runtime)}</p>
+                <ContainerGenres>
+                    <p> &nbsp; • {release_date}</p>
+                    {
+                        genres.map((genre) => {
+                            return (
+                                <p key={genre.name}> &nbsp; • {genre.name}</p>
+                            )
+                        })
+                    }
+                    <p> &nbsp; • {runTime(runtime)}</p>
+                </ContainerGenres>
+
                 <ContaineAverage>
                     {renderCicle(percent)}
                     <StyleText>Avaliação dos usuários</StyleText>
