@@ -55,6 +55,14 @@ export const Title = styled.h1`
     }
 `
 
+export const ContainerGenres = styled.span`
+    display: flex;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: block;
+    }
+`
+
 export const ContaineAverage = styled.span`
     display: flex;
     width: max-content;
@@ -79,20 +87,40 @@ export const ContainerCircleBar = styled.div`
 `
 export const StyleOverview = styled.p`
     display: flex;
-    max-width: 94vw;
+    max-width: 64vw;
     flex-wrap: wrap;
     margin-top: 0.5em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: flex;
+        max-width: 94vw;
+        flex-wrap: wrap;
+        margin-top: 0.5em;
+    }
+   
+   
 `
 
 export const ContainerCrew = styled.section`
+
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 90vw;
+    max-width: 64vw;
     grid-auto-rows: max-content;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    `
+    margin-bottom: 3em;
+    margin-top: 3em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 90vw;
+        grid-auto-rows: max-content;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    
+`
 export const StyleCrew = styled.span`
     width: 26vw;
 `
