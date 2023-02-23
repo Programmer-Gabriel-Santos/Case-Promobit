@@ -98,7 +98,6 @@ export const StyleOverview = styled.p`
         margin-top: 0.5em;
     }
    
-   
 `
 
 export const ContainerCrew = styled.section`

@@ -7,7 +7,6 @@ import {
     ContainerButtons,
     TextPage,
     ContainerLoading,
-    StyleContainerArea
 } from "./styleHome"
 import useSearch from "../../hooks/useSearch"
 import FilmCard from "../../components/FilmCard/FilmCard"
