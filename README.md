@@ -28,4 +28,4 @@ O objetivo do desafio proposto é permitir uma melhor avaliação das habilidade
 
 ## Como rodar o projeto
 
-Você poderá acessar o [Case-Promobit](https://gabriel-the-movie.surge.sh/) para testar a aplicação ou rodá-la localmente. Para isso, deve copiar e colar seu terminal o seguinte código: ' git clone https://github.com/Programmer-Gabriel-Santos/Case-Promobit.git ', após isso digite: ' npm install ', 'npm start' e  o projeto estará rodando localmente. 
+Você poderá acessar o [Case-Promobit](https://gabriel-the-movie.surge.sh/) para testar a aplicação ou rodá-la localmente. Para isso, deve copiar e colar seu terminal o seguinte código: ' git clone https://github.com/Programmer-Gabriel-Santos/Case-Promobit.git ', após isso digite: ' npm install ', 'npm start' e  o projeto estará rodando localmente.
